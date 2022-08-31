@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@font-face {
+    font-family: VolkhovReg;
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts//Volkhov-Regular.woff'), url('../fonts//Volkhov-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: VolkhovBold;
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Volkhov-Bold.woff'), url('../fonts/Volkhov-Bold.woff') format('woff');
+}
+
+:root {
+    --white: #FFFFFF;
+    --lagoon : rgba(255, 255, 255, 0.27);
+    --gray: #9CA0B0;
+    --yellow: #FBB040;
+    --offyellow: #C77DFF;
+    --grayblack: #2D2A2A;
+    --black: #080809;
+
+    --font1: 'Montserrat', sans-serif;
+    --font2: 'Poppins', sans-serif;
+    --font3: 'VolkhovReg', sans-serif;
+    --font4: 'VolkhovBold', sans-serif;
+}
+
+$white: var(--white);
+$lagoon: var(--lagoon);
+$gray: var(--gray);
+$yellow: var(--yellow);
+$offyellow: var(--offyellow);
+$grayblack: var(--grayblack);
+$black: var(--black);
+
+
+$font1: var(--font1);
+$font2: var(--font2);
+$font3: var(--font3);
+$font4: var(--font4);
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin bgCover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
